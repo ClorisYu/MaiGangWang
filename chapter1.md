@@ -33,8 +33,8 @@
 ### Response properties
 
 | **Propertity** | **Description** | **type** |
-| :---: | :---: | :---: |
-| result/msg | 请求结果说明，0/OK-成功，1/error-失败，2/Parameter error-参数错误，        -1/Token error-token验证失败 | int/str |
+| :---: | :--- | :---: |
+| result/msg | 请求结果说明，0/OK-成功，1/error-失败，2/Parameter error-参数错误，-1/Token error-token验证失败 | int/str |
 | total | 购物车商品总数 | int |
 
 
