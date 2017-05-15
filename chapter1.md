@@ -24,7 +24,8 @@
 {
   "result": 0,
   "msg": "OK",
-  "total": 4
+  "addFlag": 0,
+  "total": 8
 }
 ```
 
@@ -33,6 +34,7 @@
 | **Propertity** | **Description** | **type** |
 | :---: | :--- | :---: |
 | result/msg | 请求结果说明，0/OK-成功，1/error-失败，2/Parameter error-参数错误，-1/Token error-token验证失败 | int/str |
+| addFlag | 加入状态描述，0-成功，1-超过保税仓单品数量限制（6件，在管理员系统设置），2-超过库存 | int |
 | total | 购物车商品总数 | int |
 
 
