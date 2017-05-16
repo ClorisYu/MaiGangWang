@@ -46,7 +46,7 @@
 
 | **Property** | **Description** | **type** |
 | :--- | :--- | :--- |
-| result/msg |  | int/str |
+| result/msg | 0/OK-成功，-1/Token error-token错误 | int/str |
 | total | 购物车总商品数量 | int |
 | shoppingCartList | 购物项列表（按出货方式倒序，先门店自提，后保税仓发货；按加入购物车的时间倒序，后加入的在前面） | 对象数组 |
 | id | 购物项ID | Long |
