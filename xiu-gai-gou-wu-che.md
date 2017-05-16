@@ -67,7 +67,7 @@
 
 | **Property** | **Description** | **type** |
 | :--- | :--- | :--- |
-| result/msg | 0/OK-成功，2/ | int/str |
+| result/msg | 0/OK-成功，2/Parameter error-参数错误，2/Parameter 'id' error-参数“id”错误，-1/Token error-token错误 | int/str |
 | addFlag | 加入状态描述，0-成功，1-超过保税仓单品数量限制（6件，在管理员系统设置），2-超过库存 | int |
 | total | 购物车总商品数量 | int |
 | shoppingCartList | 购物项列表（按出货方式倒序，先门店自提，后保税仓发货；按加入购物车的时间倒序，后加入的在前面） | 对象数组 |
