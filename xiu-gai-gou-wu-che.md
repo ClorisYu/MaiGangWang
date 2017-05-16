@@ -4,7 +4,7 @@
 
 ### URL
 
-> /shopping
+> /user/shopping
 
 ### Request example
 
