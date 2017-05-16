@@ -34,12 +34,22 @@
 
 | **Property** | **Description** | **type** |
 | :--- | :--- | :--- |
-| result/msg | 0/OK-成功，2/ | int/str |
-| addFlag | 加入状态描述，0-成功，1-超过保税仓单品数量限制（6件，在管理员系统设置），2-超过库存 | int |
+| result/msg | 0/OK-成功，-1/Token error-token错误 | int/str |
 | total | 购物车总商品数量 | int |
 | shoppingCartList | 删除后的购物项列表（按出货方式倒序，先门店自提，后保税仓发货；按加入购物车的时间倒序，后加入的在前面） | 对象数组 |
-| id |  |  |
-| ... |  |  |
+| id | 购物项ID | Long |
+| userId | 用户ID | Long |
+| goodsId | 商品ID | Long |
+| oldPrice | 上次修改/加入购物车时的商品价格 | BigDecimal |
+| quantity | 该商品购买数量 | int |
+| shipWay | 出货方式（1-保税仓发货，2-门店自提） | int |
+| imgpath | 商品基本图片路径 | str |
+| title | 商品标题 | str |
+| price | 商品卖价 | BigDecimal |
+| marketPrice | 商品参考价（市场价） | BigDecimal |
+| warestock1 | 自提库存 | int |
+| warestock2 | 保税仓库存 | int |
+| warestock3 | 门店库存 | int |
 
 
 
